@@ -1,11 +1,15 @@
+import { Hero } from "./components/Hero"
 import Navbar from "./components/NavBar"
 
 
 function App() {
   return (
-     <main className="font-display">
+     <header className="font-display bg-slate-200 h-svh">
         <Navbar/>
-     </main>
+        <main className="h-full">
+          <Hero/>
+        </main>
+     </header>
   )
 }
 
