@@ -1,3 +1,4 @@
+import { Footer } from "./components/Footer"
 import { Hero } from "./components/Hero"
 import { Movies } from "./components/Movies"
 import Navbar from "./components/Navbar"
@@ -12,6 +13,9 @@ function App() {
         <Hero/>
         <Movies/>
       </main>
+      <footer>
+        <Footer/>
+      </footer>
     </>
   )
 }

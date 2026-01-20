@@ -37,8 +37,8 @@ export function Movies(){
 
 
     return(
-        <section className="mt-2">
-            <h3 className="text-5xl font-semibold mb-2 text-center text-gray-800">Popular Movies</h3>
+        <section className="mt-5">
+            <h3 className="text-5xl font-semibold text-center text-gray-800 mb-10">Popular Movies</h3>
             <ul className="grid grid-cols-6 gap-4 p-3">
                 {movies.map((movie) => (
                     <MovieBoxCard key={movie.id} original_title={movie.original_title} poster={movie.poster_path} overview={movie.overview} release_date={movie.release_date} rate={movie.vote_average}/>
