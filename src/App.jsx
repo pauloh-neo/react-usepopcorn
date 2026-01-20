@@ -1,15 +1,21 @@
 import { Hero } from "./components/Hero"
+import { Movies } from "./components/Movies"
 import Navbar from "./components/Navbar"
 
 
+// KEY = "684daf52"
+
 function App() {
   return (
-     <header className="font-display bg-slate-200 h-svh m-1">
+    <>
+     <header className="font-display m-1">
         <Navbar/>
-        <main className="h-full">
-          <Hero/>
-        </main>
      </header>
+      <main className="flex flex-col gap-5">
+        <Hero/>
+        <Movies/>
+      </main>
+    </>
   )
 }
 

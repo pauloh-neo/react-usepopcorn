@@ -7,6 +7,8 @@ import { useEffect, useState } from 'react'
 export function Hero(){
 
     const [users, setUsers] = useState([]);
+    
+    console.log(users)
 
     const arrNum = Array.from({length:5}, (_, i) => i+1)
 
@@ -19,6 +21,7 @@ export function Hero(){
 
                 const data = await res.json();
                 setUsers(data.results);
+               
             }catch(error)
             {
                 console.error(error);
@@ -29,7 +32,7 @@ export function Hero(){
     }, [])
 
     return(
-        <section className="grid grid-cols-2 gap-2 p-6 text-gray-900 items-center h-svh">
+        <section className="grid grid-cols-2 gap-2 p-6 bg-slate-200 text-gray-900 items-center h-svh">
             <div className="flex flex-col gap-8 p-10">
                 <h2 className="text-[3.25rem] font-bold">Step Into the World of Movies</h2>
                 <p className="text-[1.25rem] font-semibold text-gray-500">Subscribe to discover new releases, timeless classics, and personalized recommendations made just for you.</p>
@@ -48,7 +51,7 @@ export function Hero(){
                 <ul className='relative flex items-center gap-1'>
                     
                     {users.map((user) => (
-                        <li className='' key={user.id}>
+                        <li className='' key={user.login.uuid}>
                             <img className='rounded-full' src={user.picture.thumbnail} alt="User Picture" />
                         </li>
                     ))}
