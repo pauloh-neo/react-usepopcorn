@@ -31,7 +31,7 @@ export function Hero(){
     return(
         <section className="grid grid-cols-2 gap-2 p-6 text-gray-900 items-center h-svh">
             <div className="flex flex-col gap-8 p-10">
-                <h1 className="text-[3.25rem] font-bold">Step Into the World of Movies</h1>
+                <h2 className="text-[3.25rem] font-bold">Step Into the World of Movies</h2>
                 <p className="text-[1.25rem] font-semibold text-gray-500">Subscribe to discover new releases, timeless classics, and personalized recommendations made just for you.</p>
                 <a className="text-gray-700 group inline-flex items-center justify-center gap-2
                     rounded-2xl bg-amber-300 px-6 py-4
