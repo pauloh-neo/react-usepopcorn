@@ -13,9 +13,7 @@ export default function Navbar(){
                 <input className='
                     w-96 bg-slate-200 p-2 rounded-2xl px-10 py-3
                     text-gray-800
-                    placeholder:text-gray-500 cursor-pointer outline-none transition
-                    focus:ring-2 focus:ring-slate-300
-                    focus:bg-slate-400'
+                    placeholder:text-gray-500 cursor-pointer outline-none'
                     type="search"
                     placeholder="Search..." 
                     maxLength={50}

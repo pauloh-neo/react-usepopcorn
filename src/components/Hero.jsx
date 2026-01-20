@@ -8,7 +8,6 @@ export function Hero(){
 
     const [users, setUsers] = useState([]);
     
-    console.log(users)
 
     const arrNum = Array.from({length:5}, (_, i) => i+1)
 
@@ -65,7 +64,7 @@ export function Hero(){
                     </ul>
             </div>
             <div className='flex justify-center items-center'>
-                <img className='transition-transform duration-200 hover:scale-105 rounded-2xl bg-center bg-cover' src={heroImg} alt="A banner of movies" />
+                <img className='rounded-2xl bg-center bg-cover' src={heroImg} alt="A banner of movies" />
             </div>
         </section>
     )

@@ -2,9 +2,6 @@ import { Hero } from "./components/Hero"
 import { Movies } from "./components/Movies"
 import Navbar from "./components/Navbar"
 
-
-// KEY = "684daf52"
-
 function App() {
   return (
     <>
