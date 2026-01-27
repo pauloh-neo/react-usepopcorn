@@ -7,7 +7,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { MovieBoxCard } from "../MovieBoxCard"
 import { BoxCard } from "./BoxCard"
 import { useEffect, useState } from "react"
 import { Search } from "lucide-react"
@@ -68,9 +67,9 @@ export function DialogBox({movies, movieName, setMovies, setMovieName}) {
                    
                 />
             </form>
-            <ul className="grid grid-cols-4 overflow-y-auto px-4 gap-4">
+            <ul className="grid grid-cols-2 overflow-y-auto px-4 gap-4 md:grid-cols-3">
                 {movies.map((movie) => (
-                    <BoxCard key={movie.id} original_title={movie.original_title} poster={movie.poster_path}/>
+                    <BoxCard key={movie.id} original_title={movie.original_title} poster={movie.poster_path} rate={movie.vote_average}/>
                 ))}
             </ul>
             {movieName == 0 && <ErrorBox>Find your movie...</ErrorBox>}

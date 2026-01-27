@@ -14,9 +14,8 @@ function App() {
     <>
      <header className="font-display m-1">
         <Navbar movies={movies} movieName={movieName} setMovies={setMovies} setMovieName={setMovieName}/>
-       
      </header>
-      <main className="flex flex-col gap-5">
+      <main className="flex flex-col gap-10">
         <Hero/>
         <Movies/>
       </main>

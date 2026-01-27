@@ -31,13 +31,13 @@ export function Hero(){
     }, [])
 
     return(
-        <section className="grid grid-cols-2 gap-2 p-6 bg-slate-200 text-gray-900 items-center h-svh">
-            <div className="flex flex-col gap-8 p-10">
-                <h2 className="text-[3.25rem] font-bold">Step Into the World of Movies</h2>
-                <p className="text-[1.25rem] font-semibold text-gray-500">Subscribe to discover new releases, timeless classics, and personalized recommendations made just for you.</p>
+        <section className="grid lg:grid-cols-2 gap-2 p-6 bg-slate-200 text-gray-900 items-center h-svh md:grid-cols-2">
+            <div className="flex flex-col gap-8 p-10 md:gap-5">
+                <h2 className="text-3xl lg:text-[3.25rem] font-bold md:text-4xl ">Step Into the World of Movies</h2>
+                <p className="lg:text-[1.25rem] font-semibold text-gray-500">Subscribe to discover new releases, timeless classics, and personalized recommendations made just for you.</p>
                 <a className="text-gray-700 group inline-flex items-center justify-center gap-2
                     rounded-2xl bg-amber-300 px-6 py-4
-                    text-2xl font-bold
+                    lg:text-2xl font-bold
                     w-fit
                     transition-all duration-200 ease-out
                     hover:bg-amber-400 hover:scale-105
@@ -55,7 +55,7 @@ export function Hero(){
                         </li>
                     ))}
                 </ul>  
-                    <ul className='flex flex-row items-center'>
+                    <ul className='flex lg:flex-row items-center'>
                         {arrNum.map((star) => (
                             <li key={star}>
                                 <Star className='text-yellow-600 fill-amber-500' size={18}/>
